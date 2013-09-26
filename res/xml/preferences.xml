@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="Settings" >
+
+    <CheckBoxPreference 
+        android:defaultValue="false"
+        android:key="pref_auto_start"
+        android:summary="Start on startup"
+        android:title="Auto start"/>
+    
+    <PreferenceCategory
+        android:dependency="pref_contacts_enabled"
+        android:key="pref_contacts_only"
+        android:title="Contacts only mode" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="pref_contacts_enabled"
+            android:summary="Only numbers which are in contacts list are allowed"
+            android:title="Enable Contacts only mode" />
+        <sk.pixel.blacklist.TimePickerPreference
+            android:dependency="pref_contacts_enabled"
+            android:defaultValue="00:00"
+            android:key="pref_time_contacts_from"
+            android:summary="Starting time for Contacts only mode"
+            android:title="Time of start" />
+        <sk.pixel.blacklist.TimePickerPreference
+            android:dependency="pref_contacts_enabled"
+            android:defaultValue="00:00"
+            android:key="pref_time_contacts_to"
+            android:summary="Ending time for Contacts only mode"
+            android:title="Time of the end" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:dependency="pref_whitelist_enabled"
+        android:key="pref_whitelist"
+        android:title="Whitelist mode" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="pref_whitelist_enabled"
+            android:summary="Only numbers which are on Whitelist are allowed"
+            android:title="Enable Whitelist mode" />
+
+        <sk.pixel.blacklist.TimePickerPreference
+            android:dependency="pref_contacts_enabled"
+            android:defaultValue="00:00"
+            android:key="pref_time_whitelist_from"
+            android:summary="Starting time for Whitelist mode"
+            android:title="Time of start" />
+        <sk.pixel.blacklist.TimePickerPreference
+            android:dependency="pref_contacts_enabled"
+            android:defaultValue="00:00"
+            android:key="pref_time_whitelist_to"
+            android:summary="Ending time for Whitelist mode"
+            android:title="Time of the end" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

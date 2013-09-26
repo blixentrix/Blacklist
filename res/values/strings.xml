@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BlackList</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="service_name">BlackList Service</string>
+    <string name="service_intent_name">sk.pixel.blacklist.SERVICE</string>
+    <string name="TEST_INTENT">sk.pixel.blacklist.intent.TEST_INTENT</string>
+    <string name= "ALLOW_ALL_CALLS">sk.pixel.blacklist.intent.ALLOW_ALL_CALLS</string>
+    <string name="CALL_RECEIVER_ACTIONS">sk.pixel.blacklist.intent.CALL_RECEIVER_ACTIONS</string>
+    <string name="REQUEST_RECEIVER_STATUS">sk.pixel.blacklist.intent.REQUEST_RECEIVER_STATUS</string>
+	<string name="PUBLISHED_RECEIVER_STATUS">sk.pixel.blacklist.intent.PUBLISHED_RECEIVER_STATUS</string>
+	<string name="CHANGE_RECEIVER_STATE">sk.pixel.blacklist.intent.CHANGE_RECEIVER_STATE</string>
+    
+</resources>
