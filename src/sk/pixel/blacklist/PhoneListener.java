@@ -34,6 +34,7 @@ public class PhoneListener extends PhoneStateListener {
 	}
 	
 	private boolean isForbidden(String incoming) {
+		
 		String shortForm = incoming.replaceFirst("\\+421", "");
 		Log.i(TAG, "number only " + shortForm);
 		return !contacts.existsNumber(shortForm);

@@ -49,7 +49,7 @@ public class TimePickerPreference extends DialogPreference {
 			Integer minute = timePicker.getCurrentMinute();
 			String persistedTime = hour + ":" + minute;
 			persistString(persistedTime);
-			currentTime = getPersistedString(DEF_TIME);
+			currentTime = getPersistedString(persistedTime);
 		}
 	}
 
